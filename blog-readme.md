@@ -14,7 +14,7 @@
 ### 仓库地址：
 
 - GitHub：[https://github.com/stick-i/sticki-blog](https://github.com/stick-i/sticki-blog)
-- 在线访问：[https://stick-i.github.io/sticki-blog](https://stick-i.github.io/sticki-blog)
+- 在线访问：[https://blog.sticki.cn](https://blog.sticki.cn/)
 
 ## 关于我
 
