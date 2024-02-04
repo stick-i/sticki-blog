@@ -7,4 +7,5 @@
   - [CSDN](https://blog.csdn.net/little_stick_i)
   - [知乎](https://www.zhihu.com/people/stick-i)
 
-
+- 友情链接
+  - [校园博客](https://github.com/stick-i/scblogs)
