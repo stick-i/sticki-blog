@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿杆的博客</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 解除其他平台的防盗链 -->
+    <meta name="referrer" content="never">
+
+    <!-- 设置浏览器图标 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/icons/favicon-16x16.png">
+    <link rel="manifest" href="image/icons/site.webmanifest">
+
+    <!-- vue主题 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"/>
+    <!-- 弹框样式 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.min.css">
+</head>
+
+<body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<div id="app">Loading...</div>
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+<script>
+    window.$docsify = {
+        el: '#app',
+        name: '阿杆的博客',
+        repo: 'https://github.com/stick-i/sticki-blog',
+        loadNavbar: true, //开启导航栏
+        coverpage: true,  //开启封面
+        loadSidebar: true,//开启侧边栏
+        auto2top: true,   //切换页面自动回到顶部
+        subMaxLevel: 2,   //目录最大级数
+        maxLevel: 4,      //可配置最大支持渲染的标题层级
+        homepage: 'blog-readme.md', //设置首页
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md',
+        },
+
+        //添加搜索功能，中文和英文文档同时搜索
+        search: {
+            paths: 'auto',
+            placeholder: {
+                '/': '🔍 搜索',
+            },
+            noData: {
+                '/': '找不到结果',
+            },
+            depth: 4,         //搜索标题的最大层级
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        },
+
+        // 文档页脚
+        footer: {
+            copy: 'Copyright &copy; 2024</span>',
+            auth: 'by <strong>阿杆</strong>',
+            pre: '<hr/>',
+            style: 'text-align: center;',
+        },
+
+        copyCode: {
+            buttonText: 'Copy',
+            errorText: 'Error',
+            successText: 'OK!'
+        },
+
+        // 翻页插件
+        pagination: {
+            previousText: '上一页',
+            nextText: '下一页',
+            crossChapter: true,
+            crossChapterText: true,
+        },
+
+        // 文档更新日期
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    }
+
+    // 复制提醒
+    document.body.oncopy = function () {
+        swal("复制成功 🎉",
+            "若要转载或引用请务必保留原文链接，并申明来源。\n\n如果你觉得本仓库不错，欢迎来 GitHub 点个 star 😊！",
+            "success");
+    };
+</script>
+
+<!-- emoji -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+<!-- 复制代码到剪切板 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+<!-- 搜索功能 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+<!-- C++、Java、python、bash等等语法高亮 -->
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-matlab.js"></script>
+
+<!-- 用于渲染 LaTex 数学方程 -->
+
+<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+<!-- 文档页脚增强 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-footer-enh/dist/docsify-footer.min.js"></script>
+
+<!-- 弹框 -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.min.js"></script>
+
+<!-- 访问量统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 图片缩放 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<!-- 字数统计 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+<!-- 翻页插件 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination@latest/dist/docsify-pagination.min.js"></script>
+
+<!-- 侧边栏目录折叠 -->
+<!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+
+</body>
+</html>
