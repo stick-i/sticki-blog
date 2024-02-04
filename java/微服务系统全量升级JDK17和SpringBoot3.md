@@ -1,6 +1,6 @@
 # 文章信息
 
-标题：踩了一堆坑，终于把微服务系统全面升级 JDK17 和 SpringBoot3了
+标题：踩了一堆坑，终于把微服务系统全面升级 JDK17 和 SpringBoot3 了
 
 简介：先说结论：非常推荐升级JDK17，成本低收益高。至于SpringBoot3.0，迁移成本比较高，坑也会比较多，但如果是新项目的话，还是可以试试的。
 
@@ -238,13 +238,21 @@ SpringBoot3 更改了一些配置属性，例如：`spring.redis.host`改为了`
 上面的异常信息其实分为了两个部分，前面部分是需要进行修改的配置：
 
 > The use of configuration keys that have been renamed was found in the environment:
+> 
 > Property source 'bootstrapProperties-default-redis.yaml,DEFAULT_GROUP':
+> 
 > **	Key: spring.redis.host**
+> 
 > **		Replacement: spring.data.redis.host**
+> 
 > **	Key: spring.redis.password**
+> 
 > **		Replacement: spring.data.redis.password**
+> 
 > **	Key: spring.redis.port**
+> 
 > **		Replacement: spring.data.redis.port**
+> 
 > Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
 
 它也给出了重命名之后的key，这里直接对着描述把自己的配置文件改改就好了，比较简单。
@@ -254,18 +262,31 @@ SpringBoot3 更改了一些配置属性，例如：`spring.redis.host`改为了`
 后面部分是说有一些配置已经被弃用了，但是它也给出了弃用的原因：
 
 > The use of configuration keys that are no longer supported was found in the environment:
+> 
 > Property source 'bootstrapProperties-default-springmvc.yaml,DEFAULT_GROUP':
-> 	**Key: spring.mvc.throw-exception-if-no-handler-found**
+> 
+> Key: spring.mvc.throw-exception-if-no-handler-found
+> 
 > **		Reason: DispatcherServlet property is deprecated for removal and should no longer need to be configured**
+> 
 > Property source 'bootstrapProperties-default-redis.yaml,DEFAULT_GROUP':
+> 
 > **	Key: spring.redis.lettuce.pool.max-active**
+> 
 > **		Reason: none**
+> 
 > **	Key: spring.redis.lettuce.pool.max-idle**
+> 
 > **		Reason: none**
+> 
 > **	Key: spring.redis.lettuce.pool.max-wait**
+> 
 > **		Reason: none**
+> 
 > **	Key: spring.redis.lettuce.pool.min-idle**
+> 
 > **		Reason: none**
+> 
 > Please refer to the release notes or reference guide for potential alternatives.
 
 好吧，这里其实有点小坑，只有上面第一个Key给了弃用原因，说是DispatcherServlet属性已经被移除了。但是后面几个redis相关的Key都是没有给弃用原因的。
