@@ -195,7 +195,7 @@ public class BlogDoc {
   
   - format：跟pattern差不多，官方解释是用于定义至少一种预定义格式。如果未定义，则使用默认值*_date_optional_time*和*epoch_millis*。也就是只能使用给定的枚举值，不能自定义，自定义的话得用pattern。下图是谷歌翻译的官方解释：
   
-    ![image-20221016134857918](image/image-20221016134857918.png)
+    ![image-20221016134857918](http://cdn.image.sticki.cn/202403071446842.png)
 
 
 
@@ -267,7 +267,7 @@ public interface BlogRepository extends ElasticsearchRepository<BlogDoc, Long> {
 
 1. 这个其实就有点像继承*BaseMapper*，它会给你提供一些基础的CRUD方法，方便你直接使用，比如save、delete、find之类的。
 
-   ![image-20221016142548009](image/image-20221016142548009.png)
+   ![image-20221016142548009](http://cdn.image.sticki.cn/202403071446844.png)
    
    
 
@@ -278,9 +278,9 @@ public interface BlogRepository extends ElasticsearchRepository<BlogDoc, Long> {
 
    大概就是 *findByXxxAndXxxOrXxx()* 这个类型，具体的可以参考官网：[https://docs.spring.io/spring-data/elasticsearch/docs/4.3.5/reference/html/#elasticsearch.query-methods.criterions](https://docs.spring.io/spring-data/elasticsearch/docs/4.3.5/reference/html/#elasticsearch.query-methods.criterions)，这里也截一点给大家看看（谷歌浏览器翻译的）：
 
-   ![image-20221016142312365](image/image-20221016142312365.png)
+   ![image-20221016142312365](http://cdn.image.sticki.cn/202403071446845.png)
    
-   ![image-20221016142406280](image/image-20221016142406280.png)
+   ![image-20221016142406280](http://cdn.image.sticki.cn/202403071446846.png)
 
 
 4. 也可以使用 *@Query* 注解写原生的 api 请求接口，不太优雅，个人不推荐使用。
@@ -295,7 +295,7 @@ SearchPage<BlogDoc> findByDescriptiveContent(String descriptiveContent, Pageable
 
 这个findByXxx的Xxx属性必须是实体类里面存在的属性才可以，不然会提示错误：
 
-![image-20221016142649418](image/image-20221016142649418.png)
+![image-20221016142649418](http://cdn.image.sticki.cn/202403071446847.png)
 
 
 
@@ -318,7 +318,7 @@ SearchPage<BlogDoc> findByDescriptiveContent(String descriptiveContent, Pageable
 
 官方文档给的说明就这么点。。。~~怕我学会了然后教别人吗~~。。。
 
-![image-20221016142838476](image/image-20221016142838476.png)
+![image-20221016142838476](http://cdn.image.sticki.cn/202403071446848.png)
 
 
 
@@ -328,7 +328,7 @@ SearchPage<BlogDoc> findByDescriptiveContent(String descriptiveContent, Pageable
 
 得到结果后仅需将分页的内容替换掉实体类的内容即可，并且数据里面包含有获取页码的信息的接口：
 
-![image-20221016143118800](image/image-20221016143118800.png)
+![image-20221016143118800](http://cdn.image.sticki.cn/202403071446849.png)
 
 
 
