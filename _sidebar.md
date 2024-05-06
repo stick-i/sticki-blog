@@ -29,6 +29,7 @@
   - [✨Postman 中级使用教程，你真的会用Postman吗？](other/Postman%20中级使用教程，你真的会用Postman吗？.md)
   - [GitHub连接不稳定解决方案](other/GitHub连接不稳定解决方案.md)
   - [记一次云服务器被密码爆破的经历](other/记一次云服务器被密码爆破的经历.md)
+  - [特斯拉毁约24届全部应届生](other/特斯拉毁约24届全部应届生.md)
 
 [//]: # (- 📚LeetCode)
 
