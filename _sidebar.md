@@ -17,6 +17,7 @@
 - 📚数据库
   - [🔥✨MySQL中三层B+树可存储的数据量计算方法](database/我说MySQL每张表最好不超过2000万数据，面试官让我回去等通知？.md)
   - [逻辑删除与Mybatis-Plus](database/逻辑删除与Mybatis-Plus.md)
+  - [数据库列式存储和行式存储](database/列式存储和行式存储.md)
 
 - 📚程序人生
   - [🔥2022年度总结](life/2022年度总结.md)
