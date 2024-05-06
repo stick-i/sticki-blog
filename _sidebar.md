@@ -27,6 +27,7 @@
   - [✨Markdown制作简历教程](other/Markdown制作简历教程.md)
   - [✨论如何参与一个开源项目](other/论如何参与一个开源项目.md)
   - [✨Postman 中级使用教程，你真的会用Postman吗？](other/Postman%20中级使用教程，你真的会用Postman吗？.md)
+  - [🔥程序员接到私活后如何开展工作](other/程序员接到私活后如何开展工作.md)
   - [GitHub连接不稳定解决方案](other/GitHub连接不稳定解决方案.md)
   - [记一次云服务器被密码爆破的经历](other/记一次云服务器被密码爆破的经历.md)
   - [特斯拉毁约24届全部应届生](other/特斯拉毁约24届全部应届生.md)
