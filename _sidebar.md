@@ -4,10 +4,12 @@
   - [✨基于 AOP + Redis + 自定义注解 实现细粒度的接口IP访问限制](java/基于%20AOP%20+%20Redis%20+%20自定义注解%20实现细粒度的接口IP访问限制.md)
   - [✨基于Spring-Data-Elasticsearch 优雅的实现 多字段搜索 + 高亮 + 分页 + 数据同步](java/基于Spring-Data-Elasticsearch%20优雅的实现%20多字段搜索%20+%20高亮%20+%20分页%20+%20数据同步.md)
   - [✨微服务系统全量升级JDK17和SpringBoot3](java/微服务系统全量升级JDK17和SpringBoot3.md)
+  - [✨我写了一套无敌的参数校验组件](java/我写了一套无敌的参数校验组件.md)
+  - [我把项目发布到了Maven中央仓库](java/我把项目发布到了Maven中央仓库！.md)
   - [基于javax.validation自定义参数校验注解，类似@NotNull](java/基于javax.validation自定义参数校验注解，类似@NotNull.md)
   - [基于缓存+子线程的请求日志保存方案](java/基于缓存+子线程的请求日志保存方案.md)
   - [@Autowired 和 @Resource 的区别](java/Autowired%20和%20Resource%20的区别.md)
-  - [过滤器、拦截器、AOP、ControllerAdvcie的使用对比、执行顺序及代码教程](java/过滤器、拦截器、AOP、ControllerAdvcie的使用对比、执行顺序及代码教程.md)
+  - [过滤器、拦截器、AOP、ControllerAdvice的使用对比、执行顺序及代码教程](java/过滤器、拦截器、AOP、ControllerAdvcie的使用对比、执行顺序及代码教程.md)
   - [MaxCompute存取性能调研报告，内含纯手搓SQL生成器](java/MaxCompute存取性能调研报告，内含纯手搓SQL生成器)
   - [Spring Bean的加载方式【8种】](java/Spring%20Bean的加载方式【8种】.md)
   - [SpringBoot配置SSL坑点总结【密码验证失败、连接不安全】](java/SpringBoot配置SSL坑点总结【密码验证失败、连接不安全】.md)
@@ -31,6 +33,8 @@
   - [GitHub连接不稳定解决方案](other/GitHub连接不稳定解决方案.md)
   - [记一次云服务器被密码爆破的经历](other/记一次云服务器被密码爆破的经历.md)
   - [特斯拉毁约24届全部应届生](other/特斯拉毁约24届全部应届生.md)
+  - [OpenAI新模型发布，免费开放GPT-4o！但只开放一点点……](other/OpenAI免费开放GPT4.md)
+  - [Mac软件推荐](other/Mac软件推荐.md)
 
 [//]: # (- 📚LeetCode)
 

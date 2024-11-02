@@ -1,4 +1,4 @@
-# 过滤器、拦截器、AOP、ControllerAdvcie的使用对比、执行顺序及代码教程
+# 过滤器、拦截器、AOP、ControllerAdvice的使用对比、执行顺序及代码教程
 
 # 前言
 
