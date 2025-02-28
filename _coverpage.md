@@ -1,6 +1,6 @@
 <img width="150px" style="border-radius: 50%" src="image/sticki-avatar-512x512.png" alt="">
 
-**<h1>阿杆的博客</h1>**
+**<h1>程序员阿杆</h1>**
 
 你好，我叫阿杆 😀
 
